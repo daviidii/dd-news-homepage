@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flex flex--ai-center flex--jc-center">
+      <div class="component flex flex--center">
+        <main class="component__wrapper">
+          <header class="header flex flex--jc-space-between flex--ai-center">
+            <div class="header__logo-box">
+              <picture>
+                <img
+                  src="/assets/images/logo.svg"
+                  alt="logo"
+                  class="header__logo"
+                />
+              </picture>
+            </div>
+            <nav class="nav flex flex--jc-space-between">
+              <ul class="nav__list flex flex--ai-center flex--jc-space-between">
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">New</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Popular</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Trending</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">Categories</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="nav__menu">
+              <img
+                src="/assets/images/icon-menu.svg"
+                name="menu-outline"
+                alt="menu-icone"
+                class="nav__menu-icon"
+              />
+              <img
+                src="/assets/images/icon-menu-close.svg"
+                name="menu-close-outline"
+                alt="menu-icone"
+                class="nav__menu-icon"
+              />
+            </button>
+          </header>
+          <div class="nav-mobile"></div>
+          <section class="homepage grid w-h-100p">
+            <article class="article grid w-h-100p">
+              <div class="article__img-box">
+                <picture>
+                  <source
+                    srcset="/assets/images/image-web-3-mobile.jpg"
+                    media="(max-width: 900px)"
+                  />
+                  <img
+                    src="/assets/images/image-web-3-desktop.jpg"
+                    alt="Bright Future of web 3.0 image illustration"
+                    class="article__img"
+                  />
+                </picture>
+              </div>
+              <h1 class="article__title fw800">
+                The Bright Future of Web 3.0?
+              </h1>
+              <div
+                class="article__content-info-box flex flex--column flex--jc-space-between"
+              >
+                <p class="article__content-info">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a
+                  href="#"
+                  class="btn article__btn fw700 flex flex--ai-center flex--jc-center"
+                  >read more</a
+                >
+              </div>
+            </article>
+            <aside class="side w-h-100p">
+              <h2 class="side__title fw700">New</h2>
+              <div class="side__item">
+                <a href="#" class="side__item-title fw700 link">
+                  Hydrogen VS Electric Cars
+                </a>
+                <p class="side__content-info">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <div class="side__item">
+                <a href="#" class="side__item-title fw700 link">
+                  The Downsides of AI Artistry
+                </a>
+                <p class="side__content-info">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+              <div class="side__item">
+                <a href="#" class="side__item-title fw700 link"
+                  >Is VC Funding Drying Up?</a
+                >
+                <p class="side__content-info">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </aside>
+            <div class="blog grid w-h-100p">
+              <div class="blog__image-box">
+                <img
+                  class="blog__image"
+                  src="/assets/images/image-retro-pcs.jpg"
+                  alt="Retro PC image"
+                />
+              </div>
+              <div
+                class="blog__content-box flex flex--column flex--jc-space-between"
+              >
+                <h2 class="blog__num">01</h2>
+                <a href="#" class="blog__title fw700 link"
+                  >Reviving Retro PCs</a
+                >
+                <p class="blog__content-info">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </div>
+            <div class="blog grid w-h-100p">
+              <div class="blog__image-box">
+                <img
+                  class="blog__image"
+                  src="/assets/images/image-top-laptops.jpg"
+                  alt="Retro PC image"
+                />
+              </div>
+              <div
+                class="blog__content-box flex flex--column flex--jc-space-between"
+              >
+                <h2 class="blog__num">02</h2>
+                <a href="#" class="blog__title fw700 link"
+                  >Top 10 Laptops of 2022</a
+                >
+                <p class="blog__content-info">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </div>
+            <div class="blog grid w-h-100p">
+              <div class="blog__image-box">
+                <img
+                  class="blog__image"
+                  src="/assets/images/image-gaming-growth.jpg"
+                  alt="Retro PC image"
+                />
+              </div>
+              <div
+                class="blog__content-box flex flex--column flex--jc-space-between"
+              >
+                <h2 class="blog__num">03</h2>
+                <a href="#" class="blog__title fw700 link"
+                  >The Growth of Gaming</a
+                >
+                <p class="blog__content-info">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
