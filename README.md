@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live-site](dd-news-homepage.netlify.app)
+- Live Site URL: [dd-news-homepage.netlify.app](dd-news-homepage.netlify.app)
 
 ## My process
 
